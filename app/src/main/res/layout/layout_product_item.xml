@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="product"
+            type="com.example.idrip.models.Product" />
+        <import type="com.example.idrip.utils.StringUtils"/>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#FAFBFC"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_250sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_145sdp"
+                loadImage="@{product.thumbnail}"
+                android:src="@drawable/ic_launcher_foreground"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:includeFontPadding="false"
+                    android:layout_width="@dimen/_115sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="@{product.title}"
+                    android:layout_marginStart="@dimen/_11sdp"
+                    android:hint="apple iMac 24''(2021)"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imgWishList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:src="@{product.wish?@drawable/iswish : @drawable/wishdb}" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@{StringUtils.convertDouble2Dola(product.price)}"
+                android:layout_marginStart="@dimen/_14ssp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="$1229"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/star"/>
+                <TextView
+                    android:id="@+id/tvRatting"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{StringUtils.convertDouble2String(product.rating)}"
+                    android:hint="4.9"
+                    android:layout_marginStart="@dimen/_3sdp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>>
+
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Idrip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="wish">Wish</string>
+    <string name="category">Category</string>
+    <string name="cart">Cart</string>
+    <string name="account">Account</string>
+    <string name="idrip">iDrip</string>
+    <string name="hot_deals">Hot Deals</string>
+    <string name="see_all">SEE ALL</string>
+</resources>
