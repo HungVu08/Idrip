@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "406097172565",
+    "project_id": "idrip-b3386",
+    "storage_bucket": "idrip-b3386.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406097172565:android:d28bd2f26a3bfb768e5cdc",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406097172565-gjtmc1bcoch7skh6k0i9tbl4u5g3dvlc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "30315e00ce9426191fb8df6de7a5a89f793f3734"
+          }
+        },
+        {
+          "client_id": "406097172565-jt0gqgedo8n1ccdb3o4cpe07ac106e46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABI6WGRxL53_vc3AGh7mhRHJjXoc8Qek4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406097172565-f8t9ev9m7br4f6lojvf8imb202iquql0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

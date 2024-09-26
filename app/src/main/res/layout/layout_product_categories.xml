@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+       <variable
+           name="listCategories"
+           type="com.example.myapplication.models.ListCategoriesResponseItem" />
+    </data>
+    
+       <androidx.cardview.widget.CardView
+           android:layout_margin="@dimen/_16sdp"
+           android:layout_width="@dimen/_165sdp"
+           android:layout_height="@dimen/_223sdp"
+           app:cardCornerRadius="@dimen/_20sdp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="@dimen/_152sdp"
+                   android:layout_height="@dimen/_151sdp"
+                   android:layout_gravity="center"
+                   loadUrlImage="@{listCategories.url}"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:textSize="@dimen/_20ssp"
+                   android:gravity="center"
+                   android:text="@{listCategories.name}"/>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+
+  
+</layout>
